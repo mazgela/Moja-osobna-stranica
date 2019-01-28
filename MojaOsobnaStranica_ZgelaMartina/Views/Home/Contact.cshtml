@@ -1,0 +1,52 @@
+﻿@{
+    ViewData["Title"] = "Contact us";
+}
+
+<div class="container">
+    <br />
+    <br/>
+    <h1 class="text-center">@ViewData["Title"]</h1>
+    <div class="container p-5">
+        <div class="row">
+            <div class="col ">
+                <div class="card">
+                    <div class="card-header bg-dark text-white">
+                        <i class="fa fa-envelope"></i> Contact us.
+                    </div>
+                    <div class="card-body  bg-light">
+                        <form>
+                            <div class="form-group">
+                                <label for="name">Name</label>
+                                <input type="text" class="form-control" id="name" aria-describedby="emailHelp" placeholder="Enter name" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Email address</label>
+                                <input type="email" class="form-control" id="email" aria-describedby="emailHelp" placeholder="Enter email" required>
+                                <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+                            </div>
+                            <div class="form-group">
+                                <label for="message">Message</label>
+                                <textarea class="form-control" id="message" rows="6" required></textarea>
+                            </div>
+                            <div class="mx-auto">
+                                <button type="submit" class="btn btn-dark text-right">Submit</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-sm-4">
+                <div class="card bg-light mb-3">
+                    <div class="card-header bg-dark text-white text-uppercase"><i class="fa fa-home"></i> Address</div>
+                    <div class="card-body">
+                        <p>Pantovčak 20</p>
+                        <p>10000 Zagreb</p>
+                        <p>Croatia</p>
+                        <p>Email : mazgela@unin.hr</p>
+                        <p>Tel. +385 98 988 9888</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
